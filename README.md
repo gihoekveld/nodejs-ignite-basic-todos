@@ -59,7 +59,10 @@ Creates a new user.
 
 ```json
 { 
-  "success": "User created successfully." 
+  "id": "d1e353c0-80e3-418b-b86c-b9cf6020c1bb",
+  "name": "Jane Doe",
+  "username": "jane-doe",
+  "todos": [],
 }
 ```
 </details>
@@ -171,7 +174,11 @@ Creates a new todo.
 
 ```json
 { 
-  "success": "Todo created successfully." 
+  "created_at": "2022-09-07T02:15:53.302Z", 
+  "deadline": "2022-09-07T02:15:53.301Z", 
+  "done": false, 
+  "id": "66ee0a7a-7e1f-4e46-be14-9132689f3545", 
+  "title": "First task"
 }
 ```
 </details>
@@ -222,14 +229,18 @@ Updates a todo.
 
 ```json
 { 
-  "success": "Todo updated successfully." 
+  "created_at": "2022-09-07T02:15:53.302Z", 
+  "deadline": "2022-09-07T02:17:24.417Z",
+  "done": false,
+  "id": "66ee0a7a-7e1f-4e46-be14-9132689f3545", 
+  "title": "update title"
 }
 ```
 </details>
 
 <details>
   <summary>
-    400 Bad Request.
+    404 Not Found.
   </summary>
 
 ```json
@@ -270,15 +281,19 @@ Marks a todo as done.
   </summary>
 
 ```json
-{ 
-  "success": "Todo marked as done successfully." 
+{
+  "created_at": "2022-09-07T02:20:18.180Z",
+  "deadline": "2022-09-07T02:20:18.179Z",
+  "done": true,
+  "id": "f7168094-949f-4381-adfd-d71da1a46644",
+  "title": "test todo"
 }
 ```
 </details>
 
 <details>
   <summary>
-    400 Bad Request.
+    404 Not Found.
   </summary>
 
 ```json
@@ -315,19 +330,17 @@ Deletes a todo.
 
 <details>
   <summary>
-    200 Ok.
+    204 No Content.
   </summary>
 
 ```json
-{ 
-  "success": "Todo deleted successfully." 
-}
+[]
 ```
 </details>
 
 <details>
   <summary>
-    400 Bad Request.
+    404 Not Found.
   </summary>
 
 ```json
