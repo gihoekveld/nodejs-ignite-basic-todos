@@ -1,6 +1,6 @@
 # Basic Todo API
 
-This is a basic todos API that I built for the first challenge of the node.js trail from Rocketseat's Ignite course.
+This is a basic todos API that I built for the first challenge of the node.js trail from Rocketseat's Ignite course.<br/>
 Base API url: `http://localhost:3333`
 
 ## Routes
